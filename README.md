@@ -17,11 +17,11 @@ UniLib es una plataforma de biblioteca digital orientada a la gestión de recurs
 ## Estructura del Repositorio
 
 ```
-UniLib/
-├── EA01/
-├── EA02/
-├── EA03/
-└── EFT/
+grupo 1 UniLib/
+├── EA01/          archivos → Encargo y presentación de la Experiencia de Aprendizaje 01
+├── EA02/          archivos→ Encargo y presentación de la Experiencia de Aprendizaje 02
+├── EA03/          archivos→ Encargo y presentación de la Experiencia de Aprendizaje 03
+└── EFT/           archivos → Evaluación Final (entregables finales)
 ```
 
 ### EA01
