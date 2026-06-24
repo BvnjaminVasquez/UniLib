@@ -18,7 +18,7 @@ export const usuarios = [
 ]
 
 // Valor que se cobra por cada dia de atraso en una devolucion
-export const MULTA_POR_DIA = 200
+export const MULTA_POR_DIA = 500
 
 // Devuelve una fecha (texto) sumando dias a la fecha de hoy
 function fecha(dias) {
