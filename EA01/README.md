@@ -1,10 +1,9 @@
-# EA01 - Planificacion y Requerimientos
+# EA01
 
-Experiencia de Aprendizaje 01: seleccion del ciclo de vida, levantamiento de
-requerimientos, identificacion de actores, planificacion del proyecto y
-definicion del equipo de trabajo.
+Aca esta la planificacion y los requisitos del proyecto.
 
-## Archivos
-
-- `Informe 1 - Planificacion y Requerimientos.pdf` - Informe de la entrega 1.
-- `Propuesta UNILIB.pdf` - Propuesta de gestion bibliotecaria UNILIB.
+Archivos:
+- Informe 1 - Planificacion y Requerimientos.pdf
+- Propuesta UNILIB.pdf
+- Matriz EDT UNILIB.xlsx
+- Carta Gantt UNILIB.xlsx
