@@ -1,8 +1,26 @@
+import { useState } from 'react'
+
 // Muestra la lista de libros de la biblioteca
 function Catalogo({ libros }) {
+  const [busqueda, setBusqueda] = useState("")
+
+  // filtra los libros por titulo o autor segun lo que se escribe
+  const texto = busqueda.toLowerCase()
+  const filtrados = libros.filter(libro =>
+    libro.titulo.toLowerCase().includes(texto) ||
+    libro.autor.toLowerCase().includes(texto)
+  )
+
   return (
     <div>
       <h2>Catalogo de libros</h2>
+
+      <input
+        placeholder="Buscar por titulo o autor..."
+        value={busqueda}
+        onChange={e => setBusqueda(e.target.value)}
+      />
+
       <table>
         <thead>
           <tr>
@@ -14,7 +32,7 @@ function Catalogo({ libros }) {
           </tr>
         </thead>
         <tbody>
-          {libros.map(libro => (
+          {filtrados.map(libro => (
             <tr key={libro.id}>
               <td>{libro.titulo}</td>
               <td>{libro.autor}</td>
@@ -25,6 +43,9 @@ function Catalogo({ libros }) {
               </td>
             </tr>
           ))}
+          {filtrados.length === 0 && (
+            <tr><td colSpan="5">No se encontraron libros.</td></tr>
+          )}
         </tbody>
       </table>
     </div>
